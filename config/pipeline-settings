@@ -1,0 +1,10 @@
+video_path=dataset/classroom.mp4
+show_fps="0"  #0=disable 1=enable,display real-time fps to console
+demo_mode="0"  #0=disable 1=enable
+demo_mode_display_width=600
+demo_mode_dispaly_height=450
+dl_config=config/settings.yaml
+framework=tf
+gst_plugin_dir=/root/miniconda3/envs/vdms-test/lib/gstreamer-1.0
+gst_graph=0
+cores_per_pipeline=4

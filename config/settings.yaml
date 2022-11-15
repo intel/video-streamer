@@ -1,0 +1,18 @@
+# (GPU,CPU,ARCGPU)
+device : "CPU"
+# (cv2, tf, np)
+preproc_fw : cv2
+# (INT8, FP16, FP32, AMPBF16)
+# (AMPBF16 means running BFloat16 inference by using Auto-Mixed-Precision to convert graph from FP32 to BFloat16 online)
+data_type : "FP32"
+onednn : True
+amx : True
+inter_op_parallelism : "1"
+intra_op_parallelism : "4"
+#total_frames : 1000
+database: "VDMS"
+bounding_box : True
+face_threshold : 0.7
+label_file : "coco.label"
+ssd_resnet34_fp32_1200x1200_model : "models/ssd_resnet34_fp32_1200x1200_pretrained_model.pb"
+ssd_resnet34_int8_1200x1200_model : "models/ssd_resnet34_int8_1200x1200_pretrained_model.pb"
