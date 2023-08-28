@@ -73,6 +73,7 @@ It is very important that the pipelines don't overlap numa domains or any other 
 For launching the workload using a single instance, use the following command:
 `./run.sh 1`
 
+
 For launching 14 instances with 4 cores per instance on a dual socket Xeon 8280, just run `./run.sh 14`
 
 `benchmark.sh` can be used to easily collect performance characterization data on a target hardware platform.
