@@ -2,3 +2,4 @@ opencv-python==4.5.2.54
 pyyaml
 intel-tensorflow-avx512
 vdms
+werkzeug>=3.0.1 # not directly required, pinned by Snyk to avoid a vulnerability
