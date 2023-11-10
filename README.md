@@ -9,7 +9,7 @@ For installing required software, please perform the following commands:
 
 Go to the directory where you cloned the repo:
 ```
-conda create -n vdms-test python=3.8
+conda create -n vdms-test python=3.10.12
 conda activate vdms-test
 ./install.sh
 ```
